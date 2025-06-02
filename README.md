@@ -43,3 +43,13 @@ If you're another GitHub user and want to use or improve this project:
 
 <li>Create a pull request 🚀</li>
 </ul>
+
+
+📌 Notes
+<ul>
+<li>This project is for educational and personal learning purposes only.</li>
+
+<li>All music and UI elements are either open-source or used as placeholders.</li>
+  
+<li>Feel free to customize, extend, or build on top of this project!</li>
+</ul>
