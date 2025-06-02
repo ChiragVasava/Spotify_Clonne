@@ -19,3 +19,46 @@ body{
     width: 25vw;
     padding: 10px;
 }
+.right{
+    width: 75vw;
+    margin: 16px 0;
+    position: relative;
+}
+
+.home ul li{
+    display: flex;
+    gap: 15px;
+    width: 14px;
+    list-style: none;
+    padding-top: 14px;
+    font-weight: bold;
+}
+.heading{
+    display: flex;
+    gap: 15px;
+    width: 100%;
+    /* padding: top right bottom left; */
+    padding: 23px 14px;
+    font-weight: bold;
+    align-items: center;
+    font-size: 13px;
+}
+.heading img{
+    width: 30px;
+}
+.library{
+    min-height: 80vh;
+    position:relative
+}
+.footer{
+    display: flex;
+    font-size: 15px;
+    color: grey;
+    gap: 13px;
+    position: absolute;
+    bottom: 0;
+    padding: 10px 0;
+}
+.footer a{
+    color: grey;
+}

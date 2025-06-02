@@ -1,0 +1,6 @@
+<!-- Playlist Icon (SVG) -->
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 44 47" fill="none">
+  <rect x="" y="4" width="6" height="39" rx="1" fill="black"/>
+  <rect x="16" y="4" width="6" height="39" rx="1" fill="black"/>
+  <path d="M30 4L40 23.5L30 43V4Z" fill="black"/>
+</svg>
