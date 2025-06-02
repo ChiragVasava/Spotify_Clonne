@@ -61,3 +61,25 @@ body{
 .footer a{
     color: grey;
 }
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(34 34 34);
+}
+.header>*{
+    padding: 20px;
+}
+.spotifyPlaylists{
+    padding:16px;
+}
+.spotifyPlaylists h1{
+    padding: 16px;
+}
+.cardContainer{    
+    margin: 30px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    max-height: 60vh;
+}
