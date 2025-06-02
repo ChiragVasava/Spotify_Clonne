@@ -32,7 +32,7 @@
             <div class="library bg-grey rounded m-1 p-1">
 
                 <div class="heading">
-                    <img src="img/playlist.svg" alt="Playlist">
+                    <img class="invert" src="img/playlist.svg" alt="Playlist">
                     <h2>
                         Your Library
                     </h2>
@@ -83,45 +83,94 @@
 
             <div class="spotifyPlaylists">
                 <h1>Spotify Playlist</h1>
-                <div class="cardContainder"></div>
+                <div class="cardContainder">
+                    <div class="card">
 
-                <div class="playbar">
-
-                    <div class="seekbar">
-                        <div class="circle">
-                        </div>
-                    </div>
-
-                    <div class="abovebar">
-                    
-                        <div class="songinfo">
+                        <div class="play">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 20V4L19 12L5 20Z" stroke="#141834" fill="#000" stroke-width="1.5"
+                                    stroke-linejoin="round" />
+                            </svg>
                         </div>
 
-                    <div class="songbuttons">
-                        <img width="35" id="previous" src="img/prevsong.svg" alt="Previous">
-                        <img width="35" id="play" src="img/play.svg" alt="Play">
-                        <img width="35" id="next" src="img/nextsong.svg" alt="Next">
+                        <img src="songs/English/cover.jpg" alt="Cover">
+                        <h2>English</h2>
+                        <p>A collection of popular and trending English hits across genres.
+                        </p>
                     </div>
 
-                    <div class="timevol">
+                    <div class="card">
 
-                    <div class="songtime">
-                    </div>
-
-                    <div class="volume">
-                        <img src="img/volume.svg" alt="Volume">
-                        <div class="range">
-                            <input type="range" name="volume" id="">
+                        <div class="play">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 20V4L19 12L5 20Z" stroke="#141834" fill="#000" stroke-width="1.5"
+                                    stroke-linejoin="round" />
+                            </svg>
                         </div>
+
+                        <img src="songs/Gujarati/cover.jpg" alt="Cover">
+                        <h2>Gujarati</h2>
+                        <p>Enjoy soulful and energetic tracks from Gujarat’s vibrant music culture.</p>
                     </div>
-                </div>
+
+                    <div class="card">
+
+                        <div class="play">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 20V4L19 12L5 20Z" stroke="#141834" fill="#000" stroke-width="1.5"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+
+                        <img src="songs/Hindi/cover.jpg" alt="Cover">
+                        <h2>Hindi</h2>
+                        <p> A curated mix of Bollywood classics and latest Hindi chartbusters.</p>
+                    </div>
+
+
+
+
+
+                    <div class="playbar">
+
+                        <div class="seekbar">
+                            <div class="circle">
+                            </div>
+                        </div>
+
+                        <div class="abovebar">
+
+                            <div class="songinfo">
+                            </div>
+
+                            <div class="songbuttons">
+                                <img width="35" id="previous" src="img/prevsong.svg" alt="Previous">
+                                <img width="35" id="play" src="img/play.svg" alt="Play">
+                                <img width="35" id="next" src="img/nextsong.svg" alt="Next">
+                            </div>
+
+                            <div class="timevol">
+
+                                <div class="songtime">
+                                </div>
+
+                                <div class="volume">
+                                    <img src="img/volume.svg" alt="Volume">
+                                    <div class="range">
+                                        <input type="range" name="volume" id="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <script src="js/javascript.js" ></script>
+        <script src="js/javascript.js"></script>
 
 </body>
 
