@@ -115,3 +115,34 @@ body{
     opacity: var(--a);
     transition: all 1s ease-out;
 }
+.buttons>* {
+    margin: 0 12px;
+}
+.signupbtn{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border: none;
+    outline:none;
+    cursor:pointer;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 21px;
+}
+.signupbtn:hover{
+    font-size: 17px;
+    color: white;
+}
+.loginbtn{
+    background-color: white;
+    border-radius: 21px;
+    color: black;
+    font-size: 16px;
+    padding: 10px;
+    width: 79px;
+    cursor: pointer;
+}
+.loginbtn:hover{
+    font-weight: bold;
+    font-size: 17px;
+}
