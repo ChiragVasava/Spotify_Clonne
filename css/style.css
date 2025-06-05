@@ -160,3 +160,8 @@ body{
     width: 70vw;
     min-height: 40px;
 }
+.songbuttons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
