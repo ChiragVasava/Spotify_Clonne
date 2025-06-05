@@ -170,3 +170,8 @@ body{
     overflow: auto;
     margin-bottom: 44px;
 }
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
