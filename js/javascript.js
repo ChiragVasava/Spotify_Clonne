@@ -1,6 +1,6 @@
 async function getSongs() {
 
-    let a = await fetch("http://192.168.29.83:3000/songs/English/")
+    let a = await fetch("songs/English/")
     let response = await a.text();
     console.log(response)
     let div = document.createElement("div")
@@ -24,7 +24,8 @@ async function main() {
     let songUL = document.querySelector(".songList ul");
     songUL.innerHTML = ""
     for (const song of songs) {
-        songUL.innerHTML = songUL.innerHTML + `<li> ${song} </li>`;
+let fileName = decodeURIComponent(song.split("/").pop());
+    songUL.innerHTML += `<li>${fileName}</li>`;
     }
 
     //Play The First Song
