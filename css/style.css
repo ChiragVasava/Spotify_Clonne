@@ -200,3 +200,6 @@ body{
     font-size: 13px;
     width: 344px;
 }
+.info div {
+    word-break: break-all;
+}
