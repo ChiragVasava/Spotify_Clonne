@@ -181,3 +181,6 @@ body{
     align-items: center;
     gap: 14px;
 }
+.songList ul {
+    padding: 0 12px;
+}
