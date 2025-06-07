@@ -1,5 +1,4 @@
 console.log("Lets Write Javascript");
-
 async function getSongs() {
 
     let a = await fetch("http://192.168.29.83:3000/songs/English/")
