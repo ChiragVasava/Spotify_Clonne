@@ -1,4 +1,3 @@
-console.log("Lets Write Javascript");
 async function getSongs() {
 
     let a = await fetch("http://192.168.29.83:3000/songs/English/")
@@ -15,8 +14,6 @@ async function getSongs() {
         }
     }
     return songs
-
-
 }
 async function main() {
     //Get the list of all the songs
@@ -38,6 +35,5 @@ async function main() {
         console.log(audio.duration, audio.currentSrc, audio.currentTime)
         // The duration variable now holds the duration (in seconds) of the audio clip
     });
-    
 }
 main()
