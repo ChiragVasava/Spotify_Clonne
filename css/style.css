@@ -165,11 +165,6 @@ body{
     justify-content: center;
     gap: 16px;
 }
-.songList {
-    height: 544px;
-    overflow: auto;
-    margin-bottom: 44px;
-}
 
 .hamburger {
     display: none;
@@ -181,10 +176,18 @@ body{
     align-items: center;
     gap: 14px;
 }
-.songList ul {
-    padding: 0 12px;
+
+.songList {
+    height: 544px;
+    overflow: auto;
+    margin-bottom: 44px;
 }
-.songList ul li {
+
+.songList ol {
+    padding: 10px 42px;
+}
+
+.songList ol li {
     list-style-type: decimal;
     display: flex;
     justify-content: space-between;
