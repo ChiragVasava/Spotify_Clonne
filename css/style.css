@@ -196,3 +196,7 @@ body{
     padding: 13px;
     border-radius: 5px;
 }
+.songList .info {
+    font-size: 13px;
+    width: 344px;
+}
