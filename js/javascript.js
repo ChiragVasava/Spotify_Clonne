@@ -27,7 +27,17 @@ async function main() {
     // songUL.innerHTML = ""
     for (const song of songs) {
 let fileName = decodeURIComponent(song.split("/").pop());
-    songUL.innerHTML += `<li>${fileName}</li>`;
+    songUL.innerHTML += `<li>
+                        <img class="invert" src="img/music.svg" alt="Music">
+                        <div class="info">
+                            <div>${fileName}</div>
+                            <div>Chirag</div>
+                        </div>
+                        <div class="playnow">
+                        <span>Play Now</span>
+                        <img class="invert" src="img/play.svg" alt="Play">
+                        </div>
+                        </li>`;
     }
 
     //Play The First Song
