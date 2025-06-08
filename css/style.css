@@ -47,7 +47,7 @@ body{
 }
 .library{
     min-height: 80vh;
-    position:relative
+    position:relative;
 }
 .footer{
     display: flex;
@@ -57,9 +57,11 @@ body{
     position: absolute;
     bottom: 0;
     padding: 10px 0;
+    flex-wrap:wrap;
 }
 .footer a{
     color: grey;
+    text-decoration : none;
 }
 .header{
     display: flex;
@@ -161,9 +163,11 @@ body{
     min-height: 40px;
 }
 .songbuttons {
+    background-color: #dad5d5;
     display: flex;
     justify-content: center;
     gap: 16px;
+    margin: 10px;
 }
 
 .hamburger {
@@ -191,9 +195,9 @@ body{
     list-style-type: decimal;
     display: flex;
     justify-content: space-between;
-    gap: 12px;
+    gap: 10px;
     cursor: pointer;
-    padding: 12px 0;
+/*     padding: 12px 0; */
     border: 1px solid rgba(146, 143, 143, 0.491);
     margin: 12px 0;
     padding: 13px;
