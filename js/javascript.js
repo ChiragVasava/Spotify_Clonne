@@ -17,6 +17,19 @@ async function getSongs() {
     return songs
 }
 
+//define currentSong as an Audio object globally before using it
+let currentSong = new Audio();
+
+const playMusic = (track) => {
+    // let audio = new Audio("/songs/English/" + track)
+    currentSong.src = "/songs/English/" + track
+    currentSong.play()
+    // By Default Shows Pause Button When Loads
+    play.src = "/img/pause.svg"
+    document.querySelector(".songinfo").innerHTML = track
+    document.querySelector(".songtime").innerHTML = "00:00 / 00:00"
+}
+
 async function main() {
     //Get the list of all the songs
     let songs = await getSongs()
