@@ -57,9 +57,29 @@ let fileName = decodeURIComponent(song.split("/").pop());
     // var audio = new Audio(songs[0]);
     // audio.play();
 
-        audio.addEventListener("loadedata", () => {
-        console.log(audio.duration, audio.currentSrc, audio.currentTime)
+        // Attach an event listener to each song
+    Array.from(document.querySelector(".songList").getElementsByTagName("li")).forEach(e => {
+        e.addEventListener("click", element => {
+            console.log(e.querySelector(".info").firstElementChild.innerHTML)
+            playMusic(e.querySelector(".info").firstElementChild.innerHTML)
+        })
+    })
+
+    // Attach an event listener to play, next and previous
+    play.addEventListener("click", () => {
+        if (currentSong.paused) {
+            currentSong.play()
+            play.src = "/img/pause.svg"
+        }
+        else {
+            currentSong.pause()
+            play.src = "/img/play.svg"
+        }
+    })
+
+        // audio.addEventListener("loadedata", () => {
+        // console.log(audio.duration, audio.currentSrc, audio.currentTime)
         // The duration variable now holds the duration (in seconds) of the audio clip
-    });
+        // });
 }
 main()
