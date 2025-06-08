@@ -1,3 +1,17 @@
+function secondsToMinutesSeconds(seconds) {
+    if (isNaN(seconds) || seconds < 0) {
+        return "00:00";
+    }
+
+    const minutes = Math.floor(seconds / 60);
+    const remainingSeconds = Math.floor(seconds % 60);
+
+    const formattedMinutes = String(minutes).padStart(2, '0');
+    const formattedSeconds = String(remainingSeconds).padStart(2, '0');
+
+    return `${formattedMinutes}:${formattedSeconds}`;
+}
+
 async function getSongs() {
 
     let a = await fetch("songs/English")
@@ -75,6 +89,14 @@ let fileName = decodeURIComponent(song.split("/").pop());
             currentSong.pause()
             play.src = "/img/play.svg"
         }
+    })
+
+        //Listen for timeupdate event
+    currentSong.addEventListener("timeupdate", ()=>{
+        console.log(currentSong.currentTime, currentSong.duration);
+        document.querySelector(".songtime").innerHTML = 
+        `${secondsToMinutesSeconds(currentSong.currentTime)}/
+        ${secondsToMinutesSeconds(currentSong.duration)}`
     })
 
         // audio.addEventListener("loadedata", () => {
