@@ -112,6 +112,11 @@ let fileName = decodeURIComponent(song.split("/").pop());
         // Add an Event listener for hamburger
     document.querySelector(".hamburger").addEventListener("click", ()=>{
         document.querySelector(".left").style.left = "0"
+    }) 
+
+    // Add an event listener for close button
+    document.querySelector(".close").addEventListener("click", () => {
+        document.querySelector(".left").style.left = "-120%"
     })
         // audio.addEventListener("loadedata", () => {
         // console.log(audio.duration, audio.currentSrc, audio.currentTime)
