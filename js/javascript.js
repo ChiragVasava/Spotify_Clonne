@@ -97,8 +97,18 @@ let fileName = decodeURIComponent(song.split("/").pop());
         document.querySelector(".songtime").innerHTML = 
         `${secondsToMinutesSeconds(currentSong.currentTime)}/
         ${secondsToMinutesSeconds(currentSong.duration)}`
+
+        Document.querySelector(".circle").style.left = (currentSong.currentTime / currentSong.duration) * 100 + "%";        
     })
 
+    //Add an event listener to seekbar
+        //The Element.getBoundingClientRect() method returns a DOMRect object providing information about the size of an element and its position relative to the viewport.
+    document.querySelector(".seekbar").addEventListener("click", e => {
+        let percent = (e.offsetX / e.target.getBoundingClientRect().width) * 100;
+        document.querySelector(".circle").style.left = percent + "%";
+        currentSong.currentTime = ((currentSong.duration) * percent) / 100
+    })
+    
         // audio.addEventListener("loadedata", () => {
         // console.log(audio.duration, audio.currentSrc, audio.currentTime)
         // The duration variable now holds the duration (in seconds) of the audio clip
