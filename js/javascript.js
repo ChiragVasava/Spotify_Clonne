@@ -118,6 +118,16 @@ let fileName = decodeURIComponent(song.split("/").pop());
     document.querySelector(".close").addEventListener("click", () => {
         document.querySelector(".left").style.left = "-120%"
     })
+
+    // Add an event listener to previous
+    previous.addEventListener("click", () => {
+        currentSong.pause()
+        console.log("Previous clicked")
+        let index = songs.indexOf(currentSong.src.split("/").slice(-1)[0])
+        if ((index - 1) >= 0) {
+            playMusic(songs[index - 1])
+        }
+    })
         // audio.addEventListener("loadedata", () => {
         // console.log(audio.duration, audio.currentSrc, audio.currentTime)
         // The duration variable now holds the duration (in seconds) of the audio clip
