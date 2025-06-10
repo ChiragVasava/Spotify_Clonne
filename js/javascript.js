@@ -107,10 +107,10 @@ let fileName = decodeURIComponent(song.split("/").pop());
         let percent = (e.offsetX / e.target.getBoundingClientRect().width) * 100;
         document.querySelector(".circle").style.left = percent + "%";
         currentSong.currentTime = ((currentSong.duration) * percent) / 100
-    })
-
         // Add an Event Lisntner for bar
     document.querySelector(".bar").style.width = percent + "%";
+    })
+
     
         // Add an Event listener for hamburger
     document.querySelector(".hamburger").addEventListener("click", ()=>{
