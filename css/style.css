@@ -235,6 +235,16 @@ body{
     margin: 6px;
     cursor: pointer;
 }
+.bar {
+  height: 100%;
+  background-color: red;
+  width: 0%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 0;
+  border-radius: 10px;
+}
 
 .circle {
     width: 11px;
