@@ -299,11 +299,11 @@ body{
     }
 
     .playbar {
-        width: calc(100vw - 60px);
+        width: calc(100vw - 110px);
     }
 
     .seekbar{
-        width: calc(100vw - 70px);
+        width: calc(100vw - 110px);
     }
     .hamburger {
         display: block;
@@ -324,4 +324,10 @@ body{
     .cardContainer{
         margin: 0;
     }
+        .abovebar {
+        flex-direction: column;
+        align-items: center;
+        gap: 23px;
+    }
+
 }
