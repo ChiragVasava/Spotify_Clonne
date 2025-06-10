@@ -98,7 +98,7 @@ let fileName = decodeURIComponent(song.split("/").pop());
         `${secondsToMinutesSeconds(currentSong.currentTime)}/
         ${secondsToMinutesSeconds(currentSong.duration)}`
 
-        Document.querySelector(".circle").style.left = (currentSong.currentTime / currentSong.duration) * 100 + "%";        
+        document.querySelector(".circle").style.left = (currentSong.currentTime / currentSong.duration) * 100 + "%";        
     })
 
     //Add an event listener to seekbar
@@ -109,6 +109,9 @@ let fileName = decodeURIComponent(song.split("/").pop());
         currentSong.currentTime = ((currentSong.duration) * percent) / 100
     })
 
+        // Add an Event Lisntner for bar
+    document.querySelector(".bar").style.width = percent + "%";
+    
         // Add an Event listener for hamburger
     document.querySelector(".hamburger").addEventListener("click", ()=>{
         document.querySelector(".left").style.left = "0"
