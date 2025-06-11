@@ -67,6 +67,20 @@ let fileName = decodeURIComponent(song.split("/").pop());
                         </li>`;
     }
 
+    // Load the first song in the playlist automatically (without playing)
+if (songs.length > 0) {
+    // Get the first song name
+    let firstSongName = decodeURIComponent(songs[0].split("/").pop());
+
+    // Load it into the player without playing
+    currentSong.src = "/songs/English/" + firstSongName;
+
+    // Update the UI (song info and reset time)
+    document.querySelector(".songinfo").innerHTML = firstSongName;
+    document.querySelector(".songtime").innerHTML = "00:00 / 00:00";
+}
+
+    
     //Play The First Song
     // var audio = new Audio(songs[0]);
     // audio.play();
