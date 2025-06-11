@@ -136,27 +136,41 @@ if (songs.length > 0) {
         document.querySelector(".left").style.left = "-120%"
     })
 
-    // Add an event listener to previous
-    previous.addEventListener("click", () => {
-        console.log("Previous clicked")
-        // console.log(currentSong)
-        
-        let index = songs.indexOf(currentSong.src.split("/").slice(-1) [0])
-        if((index-1) >= 0){
-            playMusic(songs[index+1])
-        }
-    })
+// Add an event listener to previous
+previous.addEventListener("click", () => {
+    console.log("Previous clicked");
 
-    // Add an event listener to next
-    next.addEventListener("click", () => {
-        console.log("Next clicked")
-        // console.log(currentSong)
-        let index = songs.indexOf(currentSong.src.split("/").slice(-1) [0])
-        // console.log(songs, index)
-        if((index+1) > length){
-            playMusic(songs[index+1])
-        }
-    })
+    // Get current filename only (last part after /)
+    let currentFile = decodeURIComponent(currentSong.src.split("/").pop());
+
+    // Get filenames from songs array
+    let songFileNames = songs.map(songUrl => decodeURIComponent(songUrl.split("/").pop()));
+
+    let index = songFileNames.indexOf(currentFile);
+
+    if (index > 0) {
+        let prevSongUrl = songs[index - 1];
+        let prevSongName = decodeURIComponent(prevSongUrl.split("/").pop());
+        playMusic(prevSongName);
+    }
+});
+
+// Add an event listener to next
+next.addEventListener("click", () => {
+    console.log("Next clicked");
+
+    let currentFile = decodeURIComponent(currentSong.src.split("/").pop());
+    let songFileNames = songs.map(songUrl => decodeURIComponent(songUrl.split("/").pop()));
+
+    let index = songFileNames.indexOf(currentFile);
+
+    if (index < songFileNames.length - 1) {
+        let nextSongUrl = songs[index + 1];
+        let nextSongName = decodeURIComponent(nextSongUrl.split("/").pop());
+        playMusic(nextSongName);
+    }
+});
+
         // audio.addEventListener("loadedata", () => {
         // console.log(audio.duration, audio.currentSrc, audio.currentTime)
         // The duration variable now holds the duration (in seconds) of the audio clip
