@@ -138,11 +138,23 @@ if (songs.length > 0) {
 
     // Add an event listener to previous
     previous.addEventListener("click", () => {
-        currentSong.pause()
         console.log("Previous clicked")
-        let index = songs.indexOf(currentSong.src.split("/").slice(-1)[0])
-        if ((index - 1) >= 0) {
-            playMusic(songs[index - 1])
+        // console.log(currentSong)
+        
+        let index = songs.indexOf(currentSong.src.split("/").slice(-1) [0])
+        if((index-1) >= 0){
+            playMusic(songs[index+1])
+        }
+    })
+
+    // Add an event listener to next
+    next.addEventListener("click", () => {
+        console.log("Next clicked")
+        // console.log(currentSong)
+        let index = songs.indexOf(currentSong.src.split("/").slice(-1) [0])
+        // console.log(songs, index)
+        if((index+1) > length){
+            playMusic(songs[index+1])
         }
     })
         // audio.addEventListener("loadedata", () => {
