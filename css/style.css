@@ -338,3 +338,52 @@ body{
         gap: 13px
     }
 }
+@media (max-width: 800px) {
+    .left {
+        width: 100vw;
+        position: absolute;
+        left: -120%;
+        z-index: 1;
+        background-color: black;
+        padding: 0;
+        transition: all .3s;
+    }
+    .right {
+        width: 100vw;
+        margin: 0;
+    }
+    .playbar,
+    .seekbar {
+        width: calc(100vw - 110px);
+    }
+    .card {
+        width: 48vw;
+    }
+    .cardContainer {
+        margin: 0;
+    }
+    .abovebar {
+        flex-direction: column;
+        align-items: center;
+        gap: 23px;
+    }
+    .songinfo,
+    .songtime {
+        width: auto;
+    }
+    .timevol {
+        flex-direction: column;
+        gap: 13px;
+    }
+    .hamburger {
+        display: block;
+    }
+    .close {
+        display: block;
+        position: absolute;
+        right: 31px;
+        top: 25px;
+        width: 29px;
+        cursor: pointer;
+    }
+}
