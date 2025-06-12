@@ -422,3 +422,24 @@ body{
         gap: 14px;
     }
 }
+/* For screens 400px and below */
+@media (max-width: 400px) {
+    .card {
+        width: 95vw;
+    }
+    .left {
+        width: 100vw;
+    }
+    .right {
+        width: 100vw;
+    }
+    .playbar,
+    .seekbar {
+        width: calc(100vw - 30px);
+    }
+    .close {
+        right: 10px;
+        top: 10px;
+        width: 24px;
+    }
+}
