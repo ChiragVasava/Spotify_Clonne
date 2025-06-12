@@ -278,7 +278,20 @@ body{
     align-items: center;
     gap: 14px;
 }
+@media (min-width: 1400px) {
+    .left {
+        width: 20vw;
+        max-width: 300px;
+    }
 
+    .right {
+        margin: 24px 0;
+    }
+
+    .playbar {
+        width: 60vw;
+    }
+}
 @media (max-width: 1200px) {
     .left {
         position: absolute;
@@ -371,6 +384,9 @@ body{
     .songtime {
         width: auto;
     }
+        .songList {
+        height: 60vh;
+    }
     .timevol {
         flex-direction: column;
         gap: 13px;
@@ -406,10 +422,14 @@ body{
         font-size: 12px;
     }
     .left {
-        width: 100vw;
+        position: absolute;
+        left: -100%;
+        width: 80vw;
+        transition: all .3s;
     }
     .right {
         width: 100vw;
+        margin: 0;
     }
     .card {
         width: 80vw;
@@ -422,10 +442,33 @@ body{
         gap: 14px;
     }
 }
+    .topbar,
+    .abovebar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .playbar,
+    .seekbar {
+        width: calc(100vw - 80px);
+    }
+
+    .songbuttons img {
+        width: 30px;
+    }
+
+    .songList ol li {
+        flex-direction: column;
+        gap: 8px;
+    }
+}
+
 /* For screens 400px and below */
 @media (max-width: 400px) {
     .card {
         width: 95vw;
+        margin: 8px auto;
     }
     .left {
         width: 100vw;
@@ -441,5 +484,23 @@ body{
         right: 10px;
         top: 10px;
         width: 24px;
+    }    .heading {
+        font-size: 11px;
+        padding: 15px;
+    }
+
+    .songinfo,
+    .songtime {
+        font-size: 12px;
+        width: 100px;
+    }
+
+    .songbuttons img {
+        width: 25px;
+    }
+
+    .playbar {
+        width: calc(100vw - 60px);
+        padding: 8px;
     }
 }
