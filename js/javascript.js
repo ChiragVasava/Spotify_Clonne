@@ -171,6 +171,18 @@ next.addEventListener("click", () => {
     }
 });
 
+   // Use this function Add an event to Volume Without using input class in Volume HTML
+    document.querySelector(".range input").addEventListener("change",(e)=>{
+        console.log(e, e.target, e.target.value)
+        currentSong.volume = parseInt(e.target.value) / 100
+    })
+
+//     // Use this to Add an event to Volume With using input class in  Volume HTML
+//     document.querySelector(".range").getElementsByClassName("input")[0].addEventListener("input", (e) => {
+//     currentSong.volume = parseInt(e.target.value) / 100;
+// });
+
+
         // audio.addEventListener("loadedata", () => {
         // console.log(audio.duration, audio.currentSrc, audio.currentTime)
         // The duration variable now holds the duration (in seconds) of the audio clip
