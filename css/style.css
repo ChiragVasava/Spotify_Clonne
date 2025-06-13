@@ -255,8 +255,13 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 12px
+    gap: 12px;
+    cursor: pointer;
 }
+.range input{
+    cursor: pointer;
+}
+    
 .songinfo, .songtime{
     color: black;
     padding: 0 12px;
@@ -278,21 +283,7 @@ body{
     align-items: center;
     gap: 14px;
 }
-@media (min-width: 1400px) {
-    .left {
-        width: 20vw;
-        max-width: 300px;
-    }
-
-    .right {
-        margin: 24px 0;
-    }
-
-    .playbar {
-        width: 60vw;
-    }
-}
-@media (max-width: 1200px) {
+@media (max-width: 1200px) { */
     .left {
         position: absolute;
         left: -120%;
