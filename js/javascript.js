@@ -83,8 +83,7 @@ async function displayAlbums() {
     let cardContainer = document.querySelector(".cardContainer")
 
     let array = Array.from(anchors)
-    for (let index = 0; index < array.length; index++) {
-        const e = array[index];
+    for (const e of array) {
 
         if (e.href.includes("/songs")) {
             let folder = e.href.split("/").slice(-2)[0]
