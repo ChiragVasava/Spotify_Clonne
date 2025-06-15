@@ -53,3 +53,7 @@ If you're another GitHub user and want to use or improve this project:
   
 <li>Feel free to customize, extend, or build on top of this project!</li>
 </ul>
+
+## 📸 Screenshot
+
+![Spotify Web Clone](img/Spotify.png)
