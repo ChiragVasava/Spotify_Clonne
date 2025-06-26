@@ -57,3 +57,10 @@ If you're another GitHub user and want to use or improve this project:
 ## 📸 Screenshot
 
 ![Spotify Web Clone](img/Spotify.png)
+
+## Video
+
+https://github.com/user-attachments/assets/531c9a13-5121-4743-a312-9abaf083b6a5
+
+
+
