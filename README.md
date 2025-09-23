@@ -64,7 +64,7 @@ Spotify_Clone/
 
 ## 📹 ScreenRecording
 
-*(Add screenshots of your UI here – homepage, playbar, etc.)*
+https://github.com/user-attachments/assets/0b0ba66e-765b-4db6-8b93-92b57e0e734f
 
 ---
 
