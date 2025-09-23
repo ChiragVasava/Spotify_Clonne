@@ -90,7 +90,3 @@ https://github.com/user-attachments/assets/0b0ba66e-765b-4db6-8b93-92b57e0e734f
 This project is licensed under the **MIT License** – free to use and modify.
 
 ---
-
-👉 This README gives your repo a **professional open-source project look** while explaining clearly what the app does, how it’s built, and how to run it.
-
-Would you like me to also **add a “Demo GIF”/Preview section** (with instructions to record your screen using a tool like LICEcap or ScreenToGif) so people can **see your clone in action** right inside the README?
